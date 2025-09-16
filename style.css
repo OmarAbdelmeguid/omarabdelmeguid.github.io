@@ -1,0 +1,159 @@
+* {
+  margin: 0; /* Remove all default margins */
+  padding: 0; /* Remove all default padding */
+}
+body {
+  font-family: 'Inter', sans-serif; /* Use Inter font for clean look */
+  background-color: #fdfeff; /* Light blue background */
+}
+.navbar {
+  background-color: #fff; /* White background for navbar */
+  border-bottom: 1px solid #ccc; /* Thin grey bottom border */
+  position: sticky; /* Sticks to top when scrolling */
+  top: 0; /* Position at top of page */
+}
+.nav-container {
+  max-width: 1200px; /* Limit nav width */
+  margin: 0 auto; /* Center the nav container */
+  padding: 16px 32px; /* Space inside nav container */
+  display: flex; /* Line up items horizontally */
+  justify-content: space-between; /* Push items to edges */
+  align-items: center; /* Vertically center items */
+}
+.logo {
+  font-size: 24px; /* Make logo text bigger */
+  font-weight: bold; /* Make logo bold */
+  color: #0057b8; /* StudyNest blue color */
+}
+nav ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Show items in a row */
+  gap: 32px; /* Space between nav links */
+}
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark grey link color */
+  font-weight: 600; /* Make links bold */
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #0057b8; /* Turn link blue on hover or active */
+}
+.hero {
+  text-align: center; /* Center text in hero */
+  padding: 64px 32px; /* Space around hero content */
+}
+.hero-logo {
+  width: 175px; /* Set logo image size */
+  margin-bottom: 16px; /* Space below logo */
+}
+.hero h2 {
+  font-size: 40px; /* Large heading text */
+  margin-bottom: 8px; /* Space below heading */
+}
+.hero p {
+  font-size: 19px; /* Slightly larger paragraph text */
+  margin-bottom: 24px; /* Space below paragraph */
+}
+.card {
+  background-color: #fff; /* White card background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 32px; /* Space inside card */
+  text-align: center; /* Center card text */
+}
+.card h3 {
+  font-size: 20px; /* Medium heading size */
+  margin-bottom: 16px; /* Space below heading */
+}
+.year-navigation {
+  padding: 32px; /* Space around year navigation section */
+}
+.page-header {
+  text-align: center; /* Center header text */
+  margin-bottom: 32px; /* Space below header */
+}
+.page-header h2 {
+  font-size: 32px; /* Large title */
+  margin-bottom: 8px; /* Space below title */
+}
+.page-header p {
+  font-size: 17px; /* Smaller description text */
+  color: #4a4a4a; /* Dark grey text color */
+}
+.year-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Responsive columns */
+  gap: 32px; /* Space between year cards */
+  max-width: 1000px; /* Limit grid width */
+  margin: 0 auto; /* Center the grid */
+}
+.year-card {
+  background-color: #1e1e1e; /* Black card background */
+  color: #fff; /* White text color */
+  border-radius: 12px; /* Rounded corners */
+  padding: 24px; /* Space inside card */
+  text-align: center; /* Center card text */
+}
+.year-card h3 {
+  margin-bottom: 16px; /* Space below heading */
+  font-size: 21px; /* Medium heading size */
+}
+.note-card {
+  display: block; /* Stack buttons vertically */
+  margin: 8px auto; /* Space around buttons */
+  padding: 12px 16px; /* Space inside buttons */
+  border-radius: 8px; /* Rounded button corners */
+  text-decoration: none; /* Remove underline from buttons */
+  font-weight: 600; /* Bold button text */
+  color: #fff; /* White button text */
+  transition: transform 0.2s; /* Smooth hover animation */
+}
+.note-card:hover {
+  transform: translateY(-3px); /* Lift button slightly on hover */
+}
+.blue   { background-color: #42a5f5; } /* Blue for Maths */
+.green  { background-color: #66bb6a; } /* Green for English */
+.red    { background-color: #ef5350; } /* Red for Science */
+footer {
+  background-color: #0057b8; /* Blue footer background */
+  color: white; /* White footer text */
+  text-align: center; /* Center footer text */
+  padding: 16px; /* Space inside footer */
+  margin-top: 64px; /* Space above footer */
+}
+.notes-section {
+  max-width: 800px; /* Limit section width */
+  margin: 48px auto; /* Center section */
+  padding: 16px; /* Space inside section */
+  display: flex; /* Use flex layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 32px; /* Space between items */
+  text-align: center; /* Center text */
+}
+.topic-block {
+  padding: 32px; /* Space inside block */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%; /* Full width block */
+  border-left: 5px solid #0057b8; /* Blue left border */
+}
+.topic-block h3 {
+  font-size: 25px; /* Large heading size */
+  margin-bottom: 16px; /* Space below heading */
+  color: #0057b8; /* Blue heading color */
+}
+.topic-block p {
+  font-size: 16px; /* Regular paragraph size */
+  color: #333; /* Dark grey text */
+  margin-bottom: 16px; /* Space below paragraph */
+  line-height: 1.7; /* Extra spacing between lines */
+}
+.topic-block .example {
+  border-left: 4px solid #42a5f5; /* Blue left border */
+  padding: 16px; /* Space inside box */
+  margin-top: 8px; /* Space above box */
+  border-radius: 6px; /* Rounded corners */
+  font-style: bold; /* (Incorrect) should be font-weight */
+  color: #333; /* Dark grey text */
+  text-align: left; /* Align text to the left */
+}
